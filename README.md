@@ -1,46 +1,32 @@
 # Centro Educacional Sonho Meu
 
-Landing page institucional em tela única. Para abrir, dê dois cliques em `index.html`. Ela funciona sem internet, porque as fontes e as imagens estão dentro desta pasta.
+Site institucional do Centro Educacional Sonho Meu, escola de Educação Infantil e Ensino Fundamental I no Planalto Ayrton Senna, em Fortaleza (CE).
 
-## O que tem na pasta
+## Seções do site
 
-```
-index.html                   a página: cabeçalho com a logo, card do menu e a folha de conteúdo
-css/style.css                estilos (cores, fontes e medidas ficam no topo, em :root)
-js/main.js                   troca de páginas, mapa da estrutura, rotina com o sol e formulário
-assets/img/                  logo oficial (PNG) e versões recortadas, favicon e ilustrações em SVG
-assets/fonts/                Playwrite BR e Lexend, com as licenças (OFL)
-filosofia-visual.md          a direção visual usada na logo, nas ilustrações e nos gráficos
-cartaz-matriculas-2027.png   peça para redes sociais (1080 x 1350)
-preview.png                  prévia da página no computador
-```
+### Início
+Apresenta a escola com o lema "Ensinando com responsabilidade ontem, hoje e sempre" e o aviso de Matrículas 2027, com vagas abertas da Educação Infantil ao 5º ano. Destaca as turmas de até 18 crianças e a opção de meio período ou integral, com botões para agendar uma visita e conhecer a proposta.
 
-## Antes de publicar, troque os dados de exemplo
+### A escola
+Conta a história da Sonho Meu, fundada em 2004 como escola de bairro, e os quatro valores que guiam o trabalho: acolher, escutar, experimentar e conviver.
 
-- **Contato** (`index.html`, página "Contato"): endereço, telefone, WhatsApp, e-mail e horário da secretaria.
-- **WhatsApp do formulário** (`js/main.js`, primeiras linhas): `WHATSAPP` (só números, com 55 e DDD) e `WHATSAPP_LEGIVEL`.
-- **Fatos sobre a escola** (`index.html`): ano de fundação (2004), "Turmas de até 18 crianças", horários da rotina e a lista de espaços. O endereço da página Contato leva ao mapa oficial (https://maps.app.goo.gl/3HZgUs8pBzDncAwa6).
+### Proposta pedagógica
+Explica a metodologia de projetos alinhada à BNCC, em que a curiosidade da turma vira tema de estudo. Mostra as quatro etapas de cada projeto: perguntar, investigar, criar e compartilhar.
 
-## Como a página funciona
+### Segmentos
+Apresenta as duas etapas de ensino:
+- **Educação Infantil (2 a 5 anos):** Maternal I, Maternal II, Pré I e Pré II, com aprendizado pela brincadeira, roda de conversa, parque, artes e música.
+- **Ensino Fundamental I (1º ao 5º ano):** alfabetização, matemática com material concreto, projetos interdisciplinares, inglês, artes e educação física.
 
-- **Tela única**: no computador tudo cabe na tela. O menu da esquerda troca o conteúdo da folha à direita, e cada página tem endereço próprio (`#inicio`, `#a-escola`, `#proposta`, `#segmentos`, `#estrutura`, `#rotina`, `#contato`). Dá para enviar o link direto de uma página, e o botão Voltar do navegador funciona.
-- **Celular**: o menu vira uma faixa no topo que rola para os lados, e o conteúdo desce em uma coluna.
-- **Estrutura**: escolha um espaço na lista ou clique no pino do mapa.
-- **Um dia aqui**: escolha um horário e o sol anda pelo céu até ele.
-- **Formulário**: abre o WhatsApp da secretaria com a mensagem pronta, sem precisar de servidor.
-- **Acessibilidade**: funciona pelo teclado, tem foco visível, textos alternativos nas imagens e respeita a opção "reduzir movimento" do sistema. Sem JavaScript, todas as páginas aparecem em sequência.
+Informa também o período integral opcional, com almoço, descanso e oficinas no contraturno.
 
-## Identidade visual
+### Estrutura
+Mostra a planta interativa da escola. Ao escolher um espaço na lista ou clicar no pino do mapa, aparece a descrição do lugar: salas de aula, salão de acolhida, espaço de convivência, cantina, banheiros, secretaria e entrada.
 
-| Cor | Uso |
-| --- | --- |
-| `#581832` vinho (cor da logo oficial) | fundo, botões e emblema |
-| `#3A1222` vinho-escuro | textos |
-| `#EDB04A` dourado | destaque do menu, estrelas e lua |
-| `#CF6A88` rosa antigo | detalhes e ilustrações |
-| `#6E9466` verde-sálvia | ilustrações |
-| `#9A7AA6` malva | Fundamental I e ilustrações |
+### Um dia aqui
+Mostra a rotina de uma turma da Educação Infantil, das 7h às 17h30. Ao escolher um horário, o sol se move pelo céu da ilustração até ele. A rotina inclui:
+- **Meio período:** chegada, roda de conversa, projeto da turma, lanche e parque, leitura e música, e saída.
+- **Integral:** almoço e descanso, oficinas, e saída.
 
-A logo oficial está em `assets/img/Logo_Sonho_Meu_nova.png`. No topo do site é usada a versão horizontal em creme (`logo-horizontal-creme.png`), feita a partir da mesma arte.
-
-Fontes: **Playwrite BR**, a cursiva ensinada nas escolas brasileiras, nos títulos e na logo; **Lexend**, criada para facilitar a leitura, no restante do texto.
+### Contato
+Traz o endereço com link para o mapa, além de telefone, WhatsApp, e-mail e horário da secretaria. Tem um formulário para agendar uma visita: a família informa o nome, a idade da criança e o melhor período, e a mensagem é enviada pronta pelo WhatsApp da secretaria.
