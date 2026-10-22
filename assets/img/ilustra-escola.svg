@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560" role="img" aria-labelledby="t">
+<title id="t">Fachada da escola Sonho Meu em papel recortado: prédio térreo com o emblema da lua e do livro, janelas das salas, portão de entrada, árvores e estrelas</title>
+<defs>
+  <filter id="recorte" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="1" seed="7" result="ruido"/>
+    <feDisplacementMap in="SourceGraphic" in2="ruido" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="borda"/>
+    <feDropShadow in="borda" dx="0" dy="3" stdDeviation="2.4" flood-color="#3A1222" flood-opacity="0.26"/>
+  </filter>
+  <filter id="recorte-leve" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="1" seed="11" result="ruido"/>
+    <feDisplacementMap in="SourceGraphic" in2="ruido" scale="1.6" xChannelSelector="R" yChannelSelector="G" result="borda"/>
+    <feDropShadow in="borda" dx="0" dy="1.4" stdDeviation="1" flood-color="#3A1222" flood-opacity="0.22"/>
+  </filter>
+  <filter id="sombra" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+    <feDropShadow dx="0" dy="1.6" stdDeviation="1.1" flood-color="#3A1222" flood-opacity="0.2"/>
+  </filter>
+  <filter id="fibra" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="9" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .26 -.1" result="pontos"/>
+    <feComposite in="pontos" in2="SourceGraphic" operator="in" result="fibras"/>
+    <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="fibras"/></feMerge>
+  </filter>
+</defs>
+<!-- céu: disco vinho como cartolina de fundo, com estrelas -->
+<g filter="url(#recorte)"><g filter="url(#fibra)"><path d="M40,470 L40,250 A260,226 0 0 1 560,250 L560,470 Z" fill="#581832"/></g></g>
+<g filter="url(#sombra)">
+  <path d="M120,136 Q121.68,148.32 134,150 Q121.68,151.68 120,164 Q118.32,151.68 106,150 Q118.32,148.32 120,136 Z" fill="#EDB04A" opacity="1"/>
+  <path d="M486,102 Q488.16,117.84 504,120 Q488.16,122.16 486,138 Q483.84,122.16 468,120 Q483.84,117.84 486,102 Z" fill="#EDB04A" opacity="1"/>
+  <path d="M526,187 Q527.08,194.92 535,196 Q527.08,197.08 526,205 Q524.92,197.08 517,196 Q524.92,194.92 526,187 Z" fill="#F8E0AE" opacity="1"/>
+  <path d="M170,84 Q170.96,91.04 178,92 Q170.96,92.96 170,100 Q169.04,92.96 162,92 Q169.04,91.04 170,84 Z" fill="#F8E0AE" opacity="1"/>
+  <path d="M400,63 Q400.84,69.16 407,70 Q400.84,70.84 400,77 Q399.16,70.84 393,70 Q399.16,69.16 400,63 Z" fill="#E8B2C2" opacity="1"/>
+</g>
+<g fill="#F8E0AE">
+  <circle cx="230" cy="70" r="2" opacity=".8"/><circle cx="96" cy="230" r="1.8" opacity=".6"/><circle cx="330" cy="46" r="1.6" opacity=".7"/>
+  <circle cx="452" cy="186" r="1.8" opacity=".6"/><circle cx="540" cy="290" r="1.6" opacity=".55"/><circle cx="64" cy="320" r="1.6" opacity=".5"/>
+</g>
+<!-- colina de trás -->
+<g filter="url(#recorte)"><path d="M28,420 C120,392 220,396 300,410 C390,394 480,392 572,418 L572,500 L28,500 Z" fill="#56794F"/></g>
+<!-- prédio térreo -->
+<g filter="url(#recorte)"><g filter="url(#fibra)"><rect x="84" y="276" width="432" height="178" fill="#FFFFFF"/></g></g>
+<g filter="url(#recorte-leve)"><rect x="70" y="256" width="460" height="26" rx="6" fill="#581832"/><rect x="84" y="440" width="432" height="16" fill="#EBCDD6"/></g>
+<g filter="url(#recorte-leve)"><rect x="101" y="309" width="50" height="62" rx="5" fill="#BEA0C4"/><rect x="104" y="312" width="44" height="56" rx="3" fill="#F6D590"/><path d="M126,312 V368 M104,338 H148" stroke="#FFFFFF" stroke-width="3"/><rect x="98" y="370" width="56" height="6" rx="3" fill="#C7A3B1"/><rect x="161" y="309" width="50" height="62" rx="5" fill="#BEA0C4"/><rect x="164" y="312" width="44" height="56" rx="3" fill="#F6D590"/><path d="M186,312 V368 M164,338 H208" stroke="#FFFFFF" stroke-width="3"/><rect x="158" y="370" width="56" height="6" rx="3" fill="#C7A3B1"/><rect x="389" y="309" width="50" height="62" rx="5" fill="#BEA0C4"/><rect x="392" y="312" width="44" height="56" rx="3" fill="#F6D590"/><path d="M414,312 V368 M392,338 H436" stroke="#FFFFFF" stroke-width="3"/><rect x="386" y="370" width="56" height="6" rx="3" fill="#C7A3B1"/><rect x="449" y="309" width="50" height="62" rx="5" fill="#BEA0C4"/><rect x="452" y="312" width="44" height="56" rx="3" fill="#F6D590"/><path d="M474,312 V368 M452,338 H496" stroke="#FFFFFF" stroke-width="3"/><rect x="446" y="370" width="56" height="6" rx="3" fill="#C7A3B1"/></g>
+<!-- frontão com o emblema -->
+<g filter="url(#recorte)"><rect x="222" y="178" width="156" height="276" fill="#F8E1E7"/></g>
+<g filter="url(#recorte-leve)"><rect x="210" y="162" width="180" height="24" rx="8" fill="#581832"/></g>
+<g filter="url(#recorte)"><circle cx="300" cy="254" r="54" fill="#FBF1E6"/></g>
+<g filter="url(#sombra)"><g fill="#581832"><path d="M268.39,244.79 A36,36 0 1 0 331.61,244.79 A33.34,33.34 0 1 1 268.39,244.79 Z"/><path d="M274.22,253.22 Q287.04,254.8 298.56,265.89 L298.56,285.76 Q282,283.6 274.22,272.01 Z"/><path d="M325.78,253.22 Q312.96,254.8 301.44,265.89 L301.44,285.76 Q318,283.6 325.78,272.01 Z"/><path d="M278.76,246.12 Q289.2,251.2 297.88,262.79 Q288.48,254.8 278.76,251.34 Z"/><path d="M321.24,246.12 Q310.8,251.2 302.12,262.79 Q311.52,254.8 321.24,251.34 Z"/><path d="M317.78,222.44 Q318.4,227.94 323.9,228.56 Q318.4,229.17 317.78,234.68 Q317.17,229.17 311.66,228.56 Q317.17,227.94 317.78,222.44 Z"/><path d="M279.77,228.12 Q280.11,231.2 283.19,231.54 Q280.11,231.89 279.77,234.96 Q279.43,231.89 276.35,231.54 Q279.43,231.2 279.77,228.12 Z"/><path d="M327.68,234.24 Q327.97,236.84 330.56,237.12 Q327.97,237.41 327.68,240 Q327.4,237.41 324.8,237.12 Q327.4,236.84 327.68,234.24 Z"/></g></g>
+<!-- portão de entrada -->
+<g filter="url(#recorte-leve)"><path d="M252,346 L348,346 L358,362 L242,362 Z" fill="#CF6A88"/></g>
+<g filter="url(#recorte-leve)">
+  <rect x="264" y="362" width="72" height="92" rx="4" fill="#6E2342"/>
+  <path d="M300,364 V454" stroke="#3F1023" stroke-width="2"/>
+  <circle cx="292" cy="412" r="3.2" fill="#EDB04A"/><circle cx="308" cy="412" r="3.2" fill="#EDB04A"/>
+</g>
+<!-- caminho até o portão -->
+<g filter="url(#recorte-leve)"><path d="M268,456 L332,456 L366,540 L234,540 Z" fill="#F1DDB2"/></g>
+<!-- árvores -->
+<g filter="url(#recorte)">
+  <rect x="49" y="372" width="10" height="70" rx="3" fill="#A3734F"/><circle cx="54" cy="358" r="34" fill="#6E9466"/>
+  <rect x="541" y="380" width="10" height="64" rx="3" fill="#A3734F"/><circle cx="546" cy="366" r="30" fill="#8AAA7C"/>
+</g>
+<g filter="url(#recorte-leve)"><circle cx="42" cy="346" r="13" fill="#8AAA7C"/><circle cx="556" cy="354" r="11" fill="#BDD2AE"/></g>
+<!-- gramado da frente -->
+<g filter="url(#recorte)"><path d="M10,470 C110,450 200,452 262,462 L234,540 L10,540 Z" fill="#6E9466"/><path d="M590,470 C490,450 400,452 338,462 L366,540 L590,540 Z" fill="#6E9466"/></g>
+<g filter="url(#recorte-leve)">
+  <circle cx="110" cy="474" r="5.5" fill="#CF6A88"/><circle cx="110" cy="474" r="2" fill="#EDB04A"/>
+  <circle cx="150" cy="468" r="5.5" fill="#EDB04A"/><circle cx="150" cy="468" r="2" fill="#CF6A88"/>
+  <circle cx="190" cy="472" r="5.5" fill="#FFFFFF"/><circle cx="190" cy="472" r="2" fill="#D6962E"/>
+  <circle cx="410" cy="472" r="5.5" fill="#FFFFFF"/><circle cx="410" cy="472" r="2" fill="#D6962E"/>
+  <circle cx="450" cy="468" r="5.5" fill="#CF6A88"/><circle cx="450" cy="468" r="2" fill="#EDB04A"/>
+  <circle cx="490" cy="474" r="5.5" fill="#EDB04A"/><circle cx="490" cy="474" r="2" fill="#CF6A88"/>
+</g>
+</svg>
