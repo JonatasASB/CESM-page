@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centro Educacional Sonho Meu</title>
+  <meta name="description"
+    content="Ensinando com responsabilidade ontem, hoje e sempre. Educação Infantil e Ensino Fundamental I no Planalto Ayrton Senna. Agende uma visita ao Centro Educacional Sonho Meu.">
+  <meta name="theme-color" content="#581832">
+  <meta property="og:title" content="Centro Educacional Sonho Meu">
+  <meta property="og:description"
+    content="Ensinando com responsabilidade ontem, hoje e sempre. Da Educação Infantil ao Fundamental I.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/emblema.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Ícones usados no menu e nos contatos (desenhados à mão, traço único) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-casa" viewBox="0 0 24 24">
+      <path d="M4 10.6 12 4l8 6.6V19.6a1.4 1.4 0 0 1-1.4 1.4H14.5v-6h-5v6H5.4A1.4 1.4 0 0 1 4 19.6z" />
+    </symbol>
+    <symbol id="i-coracao" viewBox="0 0 24 24">
+      <path d="M12 20.2s-7.6-4.6-7.6-10.4A4.2 4.2 0 0 1 12 7.2a4.2 4.2 0 0 1 7.6 2.6c0 5.8-7.6 10.4-7.6 10.4z" />
+    </symbol>
+    <symbol id="i-broto" viewBox="0 0 24 24">
+      <path d="M12 21v-8.2" />
+      <path d="M12 12.8c0-4.3 2.6-6.9 7.4-6.9 0 4.4-2.7 6.9-7.4 6.9z" />
+      <path d="M12 10.6c0-3.4-2.1-5.5-6.3-5.5 0 3.6 2.2 5.5 6.3 5.5z" />
+    </symbol>
+    <symbol id="i-blocos" viewBox="0 0 24 24">
+      <rect x="3" y="14" width="5.4" height="6.6" rx="1" />
+      <rect x="9.3" y="9.6" width="5.4" height="11" rx="1" />
+      <rect x="15.6" y="4.4" width="5.4" height="16.2" rx="1" />
+    </symbol>
+    <symbol id="i-mapa" viewBox="0 0 24 24">
+      <path d="M9 4.6 3.6 6.5v13.1L9 17.7l6 1.9 5.4-1.9V4.6L15 6.5z" />
+      <path d="M9 4.6v13.1M15 6.5v13.1" />
+    </symbol>
+    <symbol id="i-sol" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4" />
+      <path
+        d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.4 5.4l1.5 1.5M17.1 17.1l1.5 1.5M5.4 18.6l1.5-1.5M17.1 6.9l1.5-1.5" />
+    </symbol>
+    <symbol id="i-aviao" viewBox="0 0 24 24">
+      <path d="M20.8 3.4 3.4 10.6l6.8 2.8 2.8 6.8z" />
+      <path d="m10.2 13.4 4.9-4.9" />
+    </symbol>
+    <symbol id="i-pino" viewBox="0 0 24 24">
+      <path d="M12 21s-6.6-5.7-6.6-11.1a6.6 6.6 0 0 1 13.2 0C18.6 15.3 12 21 12 21z" />
+      <circle cx="12" cy="9.9" r="2.4" />
+    </symbol>
+    <symbol id="i-telefone" viewBox="0 0 24 24">
+      <path
+        d="M7 3.6h2.5l1.4 4.1-2 1.4a11.6 11.6 0 0 0 6 6l1.4-2 4.1 1.4V17a2 2 0 0 1-2.2 2A15.4 15.4 0 0 1 5 5.8a2 2 0 0 1 2-2.2z" />
+    </symbol>
+    <symbol id="i-conversa" viewBox="0 0 24 24">
+      <path d="M20.2 11.6a8.1 8.1 0 0 1-11.8 7.2L3.8 20.2l1.4-4.4a8.1 8.1 0 1 1 15-4.2z" />
+      <path d="M8.6 11.6h.01M12 11.6h.01M15.4 11.6h.01" />
+    </symbol>
+    <symbol id="i-email" viewBox="0 0 24 24">
+      <rect x="3.4" y="5.4" width="17.2" height="13.2" rx="2" />
+      <path d="m4 7 8 6.2L20 7" />
+    </symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="8.6" />
+      <path d="M12 7.4V12l3.1 2" />
+    </symbol>
+    <symbol id="i-tesoura" viewBox="0 0 24 24">
+      <circle cx="6" cy="6.4" r="2.6" />
+      <circle cx="6" cy="17.6" r="2.6" />
+      <path d="M8.2 7.9 20.4 16.8M8.2 16.1 20.4 7.2" />
+    </symbol>
+    <symbol id="i-lapis" viewBox="0 0 24 24">
+      <path d="M4.2 19.8l1.1-4.5L15.7 4.9a2 2 0 0 1 2.8 0l.6.6a2 2 0 0 1 0 2.8L8.7 18.7z" />
+      <path d="m13.9 6.7 3.4 3.4" />
+    </symbol>
+    <symbol id="i-prato" viewBox="0 0 24 24">
+      <circle cx="14" cy="12.5" r="6.6" />
+      <circle cx="14" cy="12.5" r="3.2" />
+      <path d="M4.4 4v5.2a1.6 1.6 0 0 0 3.2 0V4M6 10.8V20" />
+    </symbol>
+    <symbol id="i-gota" viewBox="0 0 24 24">
+      <path d="M12 3.4s-6 6.6-6 10.9a6 6 0 0 0 12 0C18 10 12 3.4 12 3.4z" />
+      <path d="M9.4 14.6a2.8 2.8 0 0 0 2.4 2.6" />
+    </symbol>
+    <symbol id="i-pasta" viewBox="0 0 24 24">
+      <rect x="5" y="4.6" width="14" height="16.4" rx="1.8" />
+      <path d="M9.2 4.6V3.4h5.6v1.2M8.6 10h6.8M8.6 13.6h6.8M8.6 17.2h4" />
+    </symbol>
+    <symbol id="i-porta" viewBox="0 0 24 24">
+      <path d="M6 20.6V5a1.6 1.6 0 0 1 1.6-1.6h8.8A1.6 1.6 0 0 1 18 5v15.6M3.6 20.6h16.8" />
+      <path d="M14.6 12.4h.01" />
+    </symbol>
+  </svg>
+
+  <!-- Céu de cartolina: estrelas recortadas ao fundo (decorativo) -->
+  <svg class="ceu" aria-hidden="true" focusable="false" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+    <g class="ceu__estrelas">
+      <path d="M118 62l3.2 6.6 7.2 1-5.2 5 1.3 7.2-6.5-3.4-6.5 3.4 1.3-7.2-5.2-5 7.2-1z" fill="#EDB04A" />
+      <path d="M1312 44l2.4 5 5.5.8-4 3.9 1 5.4-4.9-2.6-4.9 2.6 1-5.4-4-3.9 5.5-.8z" fill="#FFFFFF" opacity=".85" />
+      <path d="M1190 104l2 4.1 4.5.7-3.3 3.2.8 4.5-4-2.1-4 2.1.8-4.5-3.3-3.2 4.5-.7z" fill="#CF6A88" />
+      <path d="M262 118l1.8 3.7 4.1.6-3 2.9.7 4.1-3.6-1.9-3.6 1.9.7-4.1-3-2.9 4.1-.6z" fill="#FFFFFF" opacity=".7" />
+      <path d="M1388 820l2.6 5.4 6 .9-4.3 4.2 1 5.9-5.3-2.8-5.3 2.8 1-5.9-4.3-4.2 6-.9z" fill="#EDB04A" opacity=".8" />
+      <circle cx="420" cy="40" r="2.2" fill="#FFFFFF" opacity=".6" />
+      <circle cx="1040" cy="58" r="2.6" fill="#EDB04A" opacity=".7" />
+      <circle cx="70" cy="160" r="1.8" fill="#FFFFFF" opacity=".55" />
+      <circle cx="1400" cy="150" r="2" fill="#FFFFFF" opacity=".5" />
+      <circle cx="560" cy="96" r="1.6" fill="#FFFFFF" opacity=".45" />
+      <circle cx="905" cy="30" r="1.8" fill="#FFFFFF" opacity=".5" />
+      <circle cx="30" cy="640" r="2" fill="#FFFFFF" opacity=".45" />
+      <circle cx="1420" cy="520" r="1.8" fill="#EDB04A" opacity=".6" />
+    </g>
+  </svg>
+
+  <!-- ===================== CABEÇALHO: somente a logo, centralizada ===================== -->
+  <header class="topo">
+    <h1 class="topo__logo">
+      <a href="#inicio" class="topo__link">
+        <img src="assets/img/logo-horizontal-creme.png" alt="Centro Educacional Sonho Meu" width="881" height="200">
+      </a>
+    </h1>
+  </header>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL: duas sections ===================== -->
+  <main class="palco">
+
+    <!-- Section 1: card vertical com o menu de navegação -->
+    <section class="menu-card">
+      <nav class="menu" aria-label="Menu principal">
+        <span class="menu__marcador" aria-hidden="true"></span>
+        <ul class="menu__lista">
+          <li><a class="menu__link" href="#inicio"><svg class="icone" aria-hidden="true">
+                <use href="#i-casa" />
+              </svg><span>Início</span></a></li>
+          <li><a class="menu__link" href="#a-escola"><svg class="icone" aria-hidden="true">
+                <use href="#i-coracao" />
+              </svg><span>A escola</span></a></li>
+          <li><a class="menu__link" href="#proposta"><svg class="icone" aria-hidden="true">
+                <use href="#i-broto" />
+              </svg><span>Proposta pedagógica</span></a></li>
+          <li><a class="menu__link" href="#segmentos"><svg class="icone" aria-hidden="true">
+                <use href="#i-blocos" />
+              </svg><span>Segmentos</span></a></li>
+          <li><a class="menu__link" href="#estrutura"><svg class="icone" aria-hidden="true">
+                <use href="#i-mapa" />
+              </svg><span>Estrutura</span></a></li>
+          <li><a class="menu__link" href="#rotina"><svg class="icone" aria-hidden="true">
+                <use href="#i-sol" />
+              </svg><span>Um dia aqui</span></a></li>
+          <li><a class="menu__link" href="#contato"><svg class="icone" aria-hidden="true">
+                <use href="#i-aviao" />
+              </svg><span>Contato</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="cupom">
+        <svg class="cupom__tesoura" aria-hidden="true">
+          <use href="#i-tesoura" />
+        </svg>
+        <p class="cupom__titulo">Matrículas 2027</p>
+        <p class="cupom__texto">Vagas abertas da Educação Infantil ao 5º ano. Visitas de segunda a sexta.</p>
+        <a class="botao botao--primario botao--cheio" href="#contato">Agendar visita</a>
+      </div>
+    </section>
+
+    <!-- Section 2: conteúdo principal (uma "página do caderno" por vez) -->
+    <section class="folha" id="conteudo" tabindex="-1">
+
+      <!-- ===== Início ===== -->
+      <section class="painel painel--inicio" id="inicio" aria-labelledby="t-inicio">
+        <div class="painel__texto">
+          <h2 class="titulo-pauta titulo-pauta--frase" id="t-inicio" tabindex="-1">Ensinando com responsabilidade ontem,
+            hoje e sempre.</h2>
+          <p class="lead">Da Educação Infantil ao Fundamental I, o Sonho Meu cuida de cada etapa com o mesmo
+            compromisso:
+            criança chamada pelo nome, ouvida com calma e acompanhada de perto, junto da família.</p>
+          <div class="acoes">
+            <a class="botao botao--primario" href="#contato">Agendar uma visita</a>
+            <a class="botao botao--secundario" href="#proposta">Conhecer a proposta</a>
+          </div>
+          <ul class="fatos">
+            <li><span class="forma forma--circulo" aria-hidden="true"></span>Da Educação Infantil ao 5º ano</li>
+            <li><span class="forma forma--triangulo" aria-hidden="true"></span>Turmas de até 18 crianças</li>
+            <li><span class="forma forma--quadrado" aria-hidden="true"></span>Meio período ou integral</li>
+          </ul>
+        </div>
+        <figure class="painel__visual">
+          <picture>
+            <source srcset="assets/img/ilustra-inicio-animada.svg" media="(prefers-reduced-motion: no-preference)">
+            <img src="assets/img/ilustra-inicio.svg"
+              alt="Ilustração em papel recortado: um livro aberto de onde surge uma paisagem com a escola, árvores e colinas, sob uma lua e estrelas penduradas como um móbile."
+              width="640" height="600">
+          </picture>
+        </figure>
+      </section>
+
+      <!-- ===== A escola ===== -->
+      <section class="painel painel--escola" id="a-escola" aria-labelledby="t-escola">
+        <div class="painel__texto">
+          <h2 class="titulo-pauta" id="t-escola" tabindex="-1">Uma escola do tamanho da infância</h2>
+          <p class="lead">A Sonho Meu nasceu em 2004 como escola de bairro: perto de casa, com portão conhecido e
+            professores que sabem o nome de cada criança. Responsabilidade ontem, cuidado hoje e compromisso sempre:
+            crescemos sem perder esse jeito.</p>
+          <h3 class="subtitulo">O que nos guia</h3>
+          <ul class="valores">
+            <li><span class="forma forma--circulo" aria-hidden="true"></span><strong>Acolher</strong><span>A adaptação é
+                feita com calma, junto da família.</span></li>
+            <li><span class="forma forma--triangulo" aria-hidden="true"></span><strong>Escutar</strong><span>As
+                perguntas das crianças orientam os projetos.</span></li>
+            <li><span class="forma forma--quadrado" aria-hidden="true"></span><strong>Experimentar</strong><span>Errar
+                faz parte: aqui se testa e se tenta de novo.</span></li>
+            <li><span class="forma forma--estrela" aria-hidden="true"></span><strong>Conviver</strong><span>Combinados,
+                cooperação e respeito às diferenças.</span></li>
+          </ul>
+        </div>
+        <figure class="painel__visual">
+          <img src="assets/img/ilustra-escola.svg"
+            alt="Ilustração em papel recortado da fachada da escola: prédio térreo com o emblema da lua e do livro, janelas das salas, portão de entrada, árvores e estrelas."
+            width="600" height="560">
+        </figure>
+      </section>
+
+      <!-- ===== Proposta pedagógica ===== -->
+      <section class="painel painel--proposta" id="proposta" aria-labelledby="t-proposta">
+        <div class="painel__texto">
+          <h2 class="titulo-pauta" id="t-proposta" tabindex="-1">Cada pergunta vira um projeto</h2>
+          <p class="lead">Seguimos a BNCC com uma metodologia de projetos: o ponto de partida é a curiosidade da turma,
+            e o caminho é feito de investigação, brincadeira e registro.</p>
+        </div>
+        <div class="ciclo">
+          <ol class="ciclo__etapas">
+            <li class="etapa">
+              <svg class="etapa__lua" viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" class="lua-fundo" />
+                <circle cx="32" cy="32" r="21" class="lua-nova" />
+              </svg>
+              <h3>Perguntar</h3>
+              <p>Uma dúvida da turma vira tema. Por que a lua muda de forma?</p>
+            </li>
+            <li class="etapa">
+              <svg class="etapa__lua" viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" class="lua-fundo" />
+                <path class="lua-luz" d="M32 11a21 21 0 0 1 0 42 15 21 0 0 0 0-42z" />
+              </svg>
+              <h3>Investigar</h3>
+              <p>Livros, experiências, passeios e conversas com quem entende do assunto.</p>
+            </li>
+            <li class="etapa">
+              <svg class="etapa__lua" viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" class="lua-fundo" />
+                <path class="lua-luz" d="M32 11a21 21 0 0 1 0 42z" />
+              </svg>
+              <h3>Criar</h3>
+              <p>Maquetes, desenhos, textos e experimentos para mostrar o que aprenderam.</p>
+            </li>
+            <li class="etapa">
+              <svg class="etapa__lua" viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" class="lua-fundo" />
+                <circle class="lua-luz" cx="32" cy="32" r="21" />
+              </svg>
+              <h3>Compartilhar</h3>
+              <p>As crianças apresentam as descobertas para colegas e famílias.</p>
+            </li>
+          </ol>
+          <div class="ciclo__volta" aria-hidden="true"></div>
+          <p class="ciclo__nota">e cada descoberta traz uma nova pergunta</p>
+        </div>
+      </section>
+
+      <!-- ===== Segmentos ===== -->
+      <section class="painel painel--segmentos" id="segmentos" aria-labelledby="t-segmentos">
+        <div class="painel__texto">
+          <h2 class="titulo-pauta" id="t-segmentos" tabindex="-1">Cada idade tem seu jeito de aprender</h2>
+          <div class="segmento segmento--infantil">
+            <h3>Educação Infantil <span>de 2 a 5 anos</span></h3>
+            <p>Brincar é a principal linguagem. Roda de conversa, parque, artes, música e os primeiros encontros com
+              letras e números.</p>
+          </div>
+          <div class="segmento segmento--fundamental">
+            <h3>Ensino Fundamental I <span>do 1º ao 5º ano</span></h3>
+            <p>Alfabetização com sentido, matemática com material concreto e projetos que ligam as disciplinas, com
+              inglês, artes e educação física.</p>
+          </div>
+          <p class="nota-integral"><svg class="icone" aria-hidden="true">
+              <use href="#i-sol" />
+            </svg>Período integral opcional, com almoço, descanso e oficinas no contraturno.</p>
+        </div>
+        <figure class="painel__visual escada-figura">
+          <figcaption class="sr-only">Turmas por idade, do Maternal I ao 5º ano</figcaption>
+          <ol class="escada">
+            <li class="bloco bloco--infantil" style="--n:1"><span
+                class="bloco__face"><b>2</b><small>anos</small></span><span class="sr-only">Maternal I, 2 anos</span>
+            </li>
+            <li class="bloco bloco--infantil" style="--n:2"><span
+                class="bloco__face"><b>3</b><small>anos</small></span><span class="sr-only">Maternal II, 3 anos</span>
+            </li>
+            <li class="bloco bloco--infantil" style="--n:3"><span
+                class="bloco__face"><b>4</b><small>anos</small></span><span class="sr-only">Pré I, 4 anos</span></li>
+            <li class="bloco bloco--infantil" style="--n:4"><span
+                class="bloco__face"><b>5</b><small>anos</small></span><span class="sr-only">Pré II, 5 anos</span></li>
+            <li class="bloco bloco--fundamental" style="--n:5"><span
+                class="bloco__face"><b>1º</b><small>ano</small></span><span class="sr-only">1º ano</span></li>
+            <li class="bloco bloco--fundamental" style="--n:6"><span
+                class="bloco__face"><b>2º</b><small>ano</small></span><span class="sr-only">2º ano</span></li>
+            <li class="bloco bloco--fundamental" style="--n:7"><span
+                class="bloco__face"><b>3º</b><small>ano</small></span><span class="sr-only">3º ano</span></li>
+            <li class="bloco bloco--fundamental" style="--n:8"><span
+                class="bloco__face"><b>4º</b><small>ano</small></span><span class="sr-only">4º ano</span></li>
+            <li class="bloco bloco--fundamental" style="--n:9"><span
+                class="bloco__face"><b>5º</b><small>ano</small></span><span class="sr-only">5º ano</span></li>
+          </ol>
+          <div class="escada__legenda" aria-hidden="true">
+            <span class="chave chave--infantil">Educação Infantil</span>
+            <span class="chave chave--fundamental">Fundamental I</span>
+          </div>
+        </figure>
+      </section>
+
+      <!-- ===== Estrutura ===== -->
+      <section class="painel painel--estrutura" id="estrutura" aria-labelledby="t-estrutura">
+        <div class="painel__texto">
+          <h2 class="titulo-pauta" id="t-estrutura" tabindex="-1">Tudo pertinho, do portão à sala</h2>
+          <p class="lead">Uma escola compacta, em que cada espaço fica a poucos passos do outro e as crianças estão
+            sempre por perto. Escolha um lugar para ver na planta.</p>
+          <ul class="lugares">
+            <li><button type="button" class="lugar" data-lugar="salas"
+                data-texto="Quatro salas de aula, organizadas por turma, onde acontecem as aulas e os projetos do dia a dia."
+                aria-pressed="true">Salas de aula</button></li>
+            <li><button type="button" class="lugar" data-lugar="acolhida"
+                data-texto="Logo depois da entrada: é aqui que cada criança é recebida no começo do dia e onde a escola se reúne."
+                aria-pressed="false">Salão de acolhida</button></li>
+            <li><button type="button" class="lugar" data-lugar="convivencia"
+                data-texto="Espaço para o recreio, as brincadeiras e as atividades em grupo entre as turmas."
+                aria-pressed="false">Espaço de convivência</button></li>
+            <li><button type="button" class="lugar" data-lugar="cantina"
+                data-texto="Onde as crianças fazem o lanche, ao lado do espaço de convivência."
+                aria-pressed="false">Cantina</button></li>
+            <li><button type="button" class="lugar" data-lugar="banheiros"
+                data-texto="Banheiros junto ao espaço de convivência, de fácil acesso para as crianças."
+                aria-pressed="false">Banheiros</button></li>
+            <li><button type="button" class="lugar" data-lugar="secretaria"
+                data-texto="Atendimento às famílias, matrículas e documentos, logo na chegada."
+                aria-pressed="false">Secretaria</button></li>
+            <li><button type="button" class="lugar" data-lugar="entrada"
+                data-texto="O portão por onde as famílias deixam e buscam as crianças, com acesso direto ao salão de acolhida."
+                aria-pressed="false">Entrada</button></li>
+          </ul>
+          <p class="lugar-detalhe" aria-live="polite"><strong>Salas de aula.</strong> Quatro salas de aula, organizadas
+            por turma, onde acontecem as aulas e os projetos do dia a dia.</p>
+        </div>
+        <figure class="painel__visual mapa-figura">
+          <!-- Planta da escola: cada espaço é um <g class="lugar-mapa" data-lugar="..."> -->
+          <figcaption class="sr-only">Planta da escola: salas 1 a 4 à esquerda e no alto, cantina e banheiros à direita,
+            espaço de convivência e salão de acolhida no centro, secretaria junto à entrada.</figcaption>
+          <svg class="mapa" viewBox="0 0 600 650" aria-hidden="true" focusable="false">
+            <defs>
+              <filter id="m-recorte" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="1" seed="17" result="ruido" />
+                <feDisplacementMap in="SourceGraphic" in2="ruido" scale="2.4" xChannelSelector="R" yChannelSelector="G"
+                  result="borda" />
+                <feDropShadow in="borda" dx="0" dy="3" stdDeviation="2.4" flood-color="#3A1222" flood-opacity="0.24" />
+              </filter>
+              <filter id="m-sombra" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                <feDropShadow dx="0" dy="1.6" stdDeviation="1.1" flood-color="#3A1222" flood-opacity="0.2" />
+              </filter>
+              <filter id="m-fibra" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="9" result="n" />
+                <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .26 -.1"
+                  result="pontos" />
+                <feComposite in="pontos" in2="SourceGraphic" operator="in" result="fibras" />
+                <feMerge>
+                  <feMergeNode in="SourceGraphic" />
+                  <feMergeNode in="fibras" />
+                </feMerge>
+              </filter>
+            </defs>
+            <!-- terreno e prédio: planta baixa da escola -->
+            <g filter="url(#m-recorte)">
+              <g filter="url(#m-fibra)">
+                <rect x="10" y="10" width="580" height="630" rx="46" fill="#E3EAD6" />
+              </g>
+            </g>
+            <g filter="url(#m-recorte)">
+              <rect x="30" y="40" width="540" height="552" rx="14" fill="#FFFFFF" />
+            </g>
+            <!-- salas de aula (1 a 4) -->
+            <g class="lugar-mapa" data-lugar="salas">
+              <g filter="url(#m-sombra)">
+                <rect x="42" y="52" width="382" height="92" rx="6" fill="#FBEECF" />
+                <rect x="209" y="59" width="48" height="5" rx="2.5" fill="#3A1222" opacity=".7" />
+                <circle cx="57.0" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="96.1" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="135.2" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="174.3" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="213.4" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="252.6" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="291.7" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="330.8" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="369.9" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="409.0" cy="76.0" r="5" fill="#EDB04A" />
+                <circle cx="57.0" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="96.1" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="135.2" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="174.3" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="213.4" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="252.6" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="291.7" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="330.8" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="369.9" cy="114.0" r="5" fill="#EDB04A" />
+                <circle cx="409.0" cy="114.0" r="5" fill="#EDB04A" />
+                <rect x="42" y="156" width="110" height="140" rx="6" fill="#FBEECF" />
+                <rect x="73" y="163" width="48" height="5" rx="2.5" fill="#3A1222" opacity=".7" />
+                <circle cx="57.0" cy="180.0" r="5" fill="#EDB04A" />
+                <circle cx="97.0" cy="180.0" r="5" fill="#EDB04A" />
+                <circle cx="137.0" cy="180.0" r="5" fill="#EDB04A" />
+                <circle cx="57.0" cy="223.0" r="5" fill="#EDB04A" />
+                <circle cx="97.0" cy="223.0" r="5" fill="#EDB04A" />
+                <circle cx="137.0" cy="223.0" r="5" fill="#EDB04A" />
+                <circle cx="57.0" cy="266.0" r="5" fill="#EDB04A" />
+                <circle cx="97.0" cy="266.0" r="5" fill="#EDB04A" />
+                <circle cx="137.0" cy="266.0" r="5" fill="#EDB04A" />
+                <rect x="42" y="308" width="110" height="84" rx="6" fill="#FBEECF" />
+                <rect x="73" y="315" width="48" height="5" rx="2.5" fill="#3A1222" opacity=".7" />
+                <circle cx="57.0" cy="332.0" r="5" fill="#EDB04A" />
+                <circle cx="97.0" cy="332.0" r="5" fill="#EDB04A" />
+                <circle cx="137.0" cy="332.0" r="5" fill="#EDB04A" />
+                <circle cx="57.0" cy="362.0" r="5" fill="#EDB04A" />
+                <circle cx="97.0" cy="362.0" r="5" fill="#EDB04A" />
+                <circle cx="137.0" cy="362.0" r="5" fill="#EDB04A" />
+                <rect x="42" y="398" width="110" height="84" rx="6" fill="#FBEECF" />
+                <rect x="73" y="405" width="48" height="5" rx="2.5" fill="#3A1222" opacity=".7" />
+                <circle cx="57.0" cy="422.0" r="5" fill="#EDB04A" />
+                <circle cx="97.0" cy="422.0" r="5" fill="#EDB04A" />
+                <circle cx="137.0" cy="422.0" r="5" fill="#EDB04A" />
+                <circle cx="57.0" cy="452.0" r="5" fill="#EDB04A" />
+                <circle cx="97.0" cy="452.0" r="5" fill="#EDB04A" />
+                <circle cx="137.0" cy="452.0" r="5" fill="#EDB04A" />
+              </g>
+              <rect class="destaque" x="35" y="45" width="396" height="106" rx="13" />
+              <rect class="destaque" x="35" y="149" width="124" height="154" rx="13" />
+              <rect class="destaque" x="35" y="301" width="124" height="98" rx="13" />
+              <rect class="destaque" x="35" y="391" width="124" height="98" rx="13" />
+              <text class="rotulo" x="233" y="135" text-anchor="middle">Sala 4</text>
+              <text class="rotulo" x="97" y="287" text-anchor="middle">Sala 3</text>
+              <text class="rotulo" x="97" y="383" text-anchor="middle">Sala 2</text>
+              <text class="rotulo" x="97" y="473" text-anchor="middle">Sala 1</text>
+              <g transform="translate(233 104)">
+                <g class="pino">
+                  <g filter="url(#m-sombra)">
+                    <path class="pino-fundo"
+                      d="M0,0 C-3.6,-8.4 -18,-15.6 -18,-30 a18,18 0 1 1 36,0 C18,-15.6 3.6,-8.4 0,0 Z" stroke="#3A1222"
+                      stroke-width="2" />
+                  </g>
+                  <use href="#i-lapis" x="-11.5" y="-41.5" width="23" height="23" fill="none" stroke="#3A1222"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+            <!-- cantina -->
+            <g class="lugar-mapa" data-lugar="cantina">
+              <g filter="url(#m-sombra)">
+                <rect x="436" y="52" width="122" height="104" rx="6" fill="#E6EEDC" />
+                <rect x="444" y="60" width="106" height="12" rx="4" fill="#8AAA7C" />
+                <rect x="452" y="86" width="90" height="10" rx="4" fill="#FFFFFF" />
+                <rect x="452" y="106" width="90" height="10" rx="4" fill="#FFFFFF" />
+              </g>
+              <rect class="destaque" x="429" y="45" width="136" height="118" rx="13" />
+              <text class="rotulo" x="497" y="145" text-anchor="middle">Cantina</text>
+              <g transform="translate(497 110)">
+                <g class="pino">
+                  <g filter="url(#m-sombra)">
+                    <path class="pino-fundo"
+                      d="M0,0 C-3.6,-8.4 -18,-15.6 -18,-30 a18,18 0 1 1 36,0 C18,-15.6 3.6,-8.4 0,0 Z" stroke="#3A1222"
+                      stroke-width="2" />
+                  </g>
+                  <use href="#i-prato" x="-11.5" y="-41.5" width="23" height="23" fill="none" stroke="#3A1222"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+            <!-- espaço de convivência -->
+            <g class="lugar-mapa" data-lugar="convivencia">
+              <g filter="url(#m-sombra)">
+                <rect x="164" y="156" width="260" height="148" rx="6" fill="#F8E1E7" />
+                <circle cx="214" cy="210" r="15" fill="#E8B2C2" />
+                <circle cx="191" cy="210" r="4.5" fill="#FFFFFF" />
+                <circle cx="237" cy="210" r="4.5" fill="#FFFFFF" />
+                <circle cx="214" cy="187" r="4.5" fill="#FFFFFF" />
+                <circle cx="214" cy="233" r="4.5" fill="#FFFFFF" />
+                <circle cx="294" cy="210" r="15" fill="#E8B2C2" />
+                <circle cx="271" cy="210" r="4.5" fill="#FFFFFF" />
+                <circle cx="317" cy="210" r="4.5" fill="#FFFFFF" />
+                <circle cx="294" cy="187" r="4.5" fill="#FFFFFF" />
+                <circle cx="294" cy="233" r="4.5" fill="#FFFFFF" />
+                <circle cx="374" cy="210" r="15" fill="#E8B2C2" />
+                <circle cx="351" cy="210" r="4.5" fill="#FFFFFF" />
+                <circle cx="397" cy="210" r="4.5" fill="#FFFFFF" />
+                <circle cx="374" cy="187" r="4.5" fill="#FFFFFF" />
+                <circle cx="374" cy="233" r="4.5" fill="#FFFFFF" />
+              </g>
+              <rect class="destaque" x="157" y="149" width="274" height="162" rx="13" />
+              <text class="rotulo" x="294" y="290" text-anchor="middle">Espaço de convivência</text>
+              <g transform="translate(294 222)">
+                <g class="pino">
+                  <g filter="url(#m-sombra)">
+                    <path class="pino-fundo"
+                      d="M0,0 C-3.6,-8.4 -18,-15.6 -18,-30 a18,18 0 1 1 36,0 C18,-15.6 3.6,-8.4 0,0 Z" stroke="#3A1222"
+                      stroke-width="2" />
+                  </g>
+                  <use href="#i-conversa" x="-11.5" y="-41.5" width="23" height="23" fill="none" stroke="#3A1222"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+            <!-- banheiros -->
+            <g class="lugar-mapa" data-lugar="banheiros">
+              <g filter="url(#m-sombra)">
+                <rect x="436" y="168" width="122" height="136" rx="6" fill="#EDE3D3" />
+                <path d="M462,176 V226 M488,176 V226 M514,176 V226 M540,176 V226" stroke="#C2A1AE" stroke-width="3"
+                  stroke-linecap="round" />
+                <circle cx="462" cy="248" r="6" fill="#FFFFFF" />
+                <circle cx="488" cy="248" r="6" fill="#FFFFFF" />
+                <circle cx="514" cy="248" r="6" fill="#FFFFFF" />
+                <circle cx="540" cy="248" r="6" fill="#FFFFFF" />
+              </g>
+              <rect class="destaque" x="429" y="161" width="136" height="150" rx="13" />
+              <text class="rotulo" x="497" y="290" text-anchor="middle">Banheiros</text>
+              <g transform="translate(497 238)">
+                <g class="pino">
+                  <g filter="url(#m-sombra)">
+                    <path class="pino-fundo"
+                      d="M0,0 C-3.6,-8.4 -18,-15.6 -18,-30 a18,18 0 1 1 36,0 C18,-15.6 3.6,-8.4 0,0 Z" stroke="#3A1222"
+                      stroke-width="2" />
+                  </g>
+                  <use href="#i-gota" x="-11.5" y="-41.5" width="23" height="23" fill="none" stroke="#3A1222"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+            <!-- salão de acolhida -->
+            <g class="lugar-mapa" data-lugar="acolhida">
+              <g filter="url(#m-sombra)">
+                <rect x="164" y="316" width="394" height="264" rx="6" fill="#F1E6F0" />
+                <circle cx="361" cy="436" r="80" fill="#DCC8E0" />
+                <circle cx="423.0" cy="436.0" r="7" fill="#CF6A88" />
+                <circle cx="414.7" cy="467.0" r="7" fill="#EDB04A" />
+                <circle cx="392.0" cy="489.7" r="7" fill="#CF6A88" />
+                <circle cx="361.0" cy="498.0" r="7" fill="#EDB04A" />
+                <circle cx="330.0" cy="489.7" r="7" fill="#CF6A88" />
+                <circle cx="307.3" cy="467.0" r="7" fill="#EDB04A" />
+                <circle cx="299.0" cy="436.0" r="7" fill="#CF6A88" />
+                <circle cx="307.3" cy="405.0" r="7" fill="#EDB04A" />
+                <circle cx="330.0" cy="382.3" r="7" fill="#CF6A88" />
+                <circle cx="361.0" cy="374.0" r="7" fill="#EDB04A" />
+                <circle cx="392.0" cy="382.3" r="7" fill="#CF6A88" />
+                <circle cx="414.7" cy="405.0" r="7" fill="#EDB04A" />
+                <rect x="180" y="330" width="10" height="120" rx="4" fill="#BEA0C4" />
+                <rect x="532" y="330" width="10" height="120" rx="4" fill="#BEA0C4" />
+              </g>
+              <rect class="destaque" x="157" y="309" width="408" height="278" rx="13" />
+              <text class="rotulo" x="361" y="566" text-anchor="middle">Salão de acolhida</text>
+              <g transform="translate(361 446)">
+                <g class="pino">
+                  <g filter="url(#m-sombra)">
+                    <path class="pino-fundo"
+                      d="M0,0 C-3.6,-8.4 -18,-15.6 -18,-30 a18,18 0 1 1 36,0 C18,-15.6 3.6,-8.4 0,0 Z" stroke="#3A1222"
+                      stroke-width="2" />
+                  </g>
+                  <use href="#i-coracao" x="-11.5" y="-41.5" width="23" height="23" fill="none" stroke="#3A1222"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+            <!-- secretaria -->
+            <g class="lugar-mapa" data-lugar="secretaria">
+              <g filter="url(#m-sombra)">
+                <rect x="42" y="494" width="110" height="86" rx="6" fill="#EBCDD6" />
+                <rect x="60" y="506" width="74" height="16" rx="4" fill="#FFFFFF" />
+                <circle cx="97" cy="534" r="6" fill="#A03A5D" opacity=".7" />
+              </g>
+              <rect class="destaque" x="35" y="487" width="124" height="100" rx="13" />
+              <text class="rotulo" x="97" y="569" text-anchor="middle">Secretaria</text>
+              <g transform="translate(97 544)">
+                <g class="pino">
+                  <g filter="url(#m-sombra)">
+                    <path class="pino-fundo"
+                      d="M0,0 C-3.6,-8.4 -18,-15.6 -18,-30 a18,18 0 1 1 36,0 C18,-15.6 3.6,-8.4 0,0 Z" stroke="#3A1222"
+                      stroke-width="2" />
+                  </g>
+                  <use href="#i-pasta" x="-11.5" y="-41.5" width="23" height="23" fill="none" stroke="#3A1222"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+            <!-- entrada -->
+            <g class="lugar-mapa" data-lugar="entrada">
+              <g filter="url(#m-sombra)">
+                <rect x="300" y="580" width="122" height="18" rx="4" fill="#F5D58E" />
+                <rect x="110" y="604" width="400" height="28" rx="8" fill="#EDB04A" />
+              </g>
+              <rect class="destaque" x="103" y="597" width="414" height="42" rx="13" />
+              <text class="rotulo rotulo--entrada" x="361" y="623" text-anchor="middle">Entrada</text>
+              <g transform="translate(214 620)">
+                <g class="pino">
+                  <g filter="url(#m-sombra)">
+                    <path class="pino-fundo"
+                      d="M0,0 C-3.6,-8.4 -18,-15.6 -18,-30 a18,18 0 1 1 36,0 C18,-15.6 3.6,-8.4 0,0 Z" stroke="#3A1222"
+                      stroke-width="2" />
+                  </g>
+                  <use href="#i-porta" x="-11.5" y="-41.5" width="23" height="23" fill="none" stroke="#3A1222"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+            <!-- arbustos no terreno -->
+            <g filter="url(#m-recorte)">
+              <circle cx="44" cy="612" r="14" fill="#8AAA7C" />
+              <circle cx="556" cy="614" r="16" fill="#6E9466" />
+              <circle cx="578" cy="588" r="9" fill="#8AAA7C" />
+            </g>
+          </svg>
+
+        </figure>
+      </section>
+
+      <!-- ===== Um dia aqui (rotina) ===== -->
+      <section class="painel painel--rotina" id="rotina" aria-labelledby="t-rotina">
+        <div class="painel__texto">
+          <h2 class="titulo-pauta" id="t-rotina" tabindex="-1">Um dia por aqui</h2>
+          <p class="lead">Uma rotina previsível dá segurança. Escolha um horário para acompanhar o dia de uma turma da
+            Educação Infantil.</p>
+          <div class="momento-detalhe" aria-live="polite">
+            <p class="momento-detalhe__hora">7h</p>
+            <h3 class="momento-detalhe__titulo">Chegada</h3>
+            <p class="momento-detalhe__texto">Acolhida na porta da sala, com tempo para a despedida.</p>
+            <p class="momento-detalhe__tag" hidden>Período integral</p>
+          </div>
+          <div class="momento-nav">
+            <button type="button" class="botao botao--secundario botao--pequeno" data-passo="-1">Horário
+              anterior</button>
+            <button type="button" class="botao botao--secundario botao--pequeno" data-passo="1">Próximo horário</button>
+          </div>
+        </div>
+        <div class="painel__visual dia" data-periodo="manha-cedo" style="--ang: 172deg">
+          <!-- Cena do dia: céu, sol, colinas e o arco por onde o sol passa -->
+          <svg class="dia__cena" viewBox="0 0 660 500" preserveAspectRatio="xMidYMax slice" aria-hidden="true"
+            focusable="false">
+            <defs>
+              <filter id="c-recorte" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="1" seed="31" result="ruido" />
+                <feDisplacementMap in="SourceGraphic" in2="ruido" scale="2.4" xChannelSelector="R" yChannelSelector="G"
+                  result="borda" />
+                <feDropShadow in="borda" dx="0" dy="3" stdDeviation="2.4" flood-color="#3A1222" flood-opacity="0.18" />
+              </filter>
+              <filter id="c-recorte-leve" x="-15%" y="-15%" width="130%" height="140%"
+                color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="1" seed="35" result="ruido" />
+                <feDisplacementMap in="SourceGraphic" in2="ruido" scale="1.6" xChannelSelector="R" yChannelSelector="G"
+                  result="borda" />
+                <feDropShadow in="borda" dx="0" dy="1.4" stdDeviation="1" flood-color="#3A1222" flood-opacity="0.14" />
+              </filter>
+              <filter id="c-sombra" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                <feDropShadow dx="0" dy="1.6" stdDeviation="1.1" flood-color="#3A1222" flood-opacity="0.14" />
+              </filter>
+              <filter id="c-fibra" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="9" result="n" />
+                <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .26 -.1"
+                  result="pontos" />
+                <feComposite in="pontos" in2="SourceGraphic" operator="in" result="fibras" />
+                <feMerge>
+                  <feMergeNode in="SourceGraphic" />
+                  <feMergeNode in="fibras" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#c-recorte)">
+              <path d="M64,162 a24.2,24.2 0 0 1 28.16,-24.2 a33,33 0 0 1 53.76,-8.8 a22,22 0 0 1 46.08,33 Z"
+                fill="#FFFFFF" />
+              <path d="M452,106 a19.8,19.8 0 0 1 22.88,-19.8 a27,27 0 0 1 43.68,-7.2 a18,18 0 0 1 37.44,27 Z"
+                fill="#FFFFFF" />
+              <path d="M286,224 a15.4,15.4 0 0 1 18.48,-15.4 a21,21 0 0 1 35.28,-5.6 a14,14 0 0 1 30.24,21 Z"
+                fill="#FFFFFF" opacity=".9" />
+            </g>
+          </svg>
+          <div class="dia__sol" aria-hidden="true">
+            <svg viewBox="0 0 120 120" focusable="false">
+              <defs>
+                <filter id="s-recorte" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="1" seed="33" result="ruido" />
+                  <feDisplacementMap in="SourceGraphic" in2="ruido" scale="1.5" xChannelSelector="R"
+                    yChannelSelector="G" result="borda" />
+                  <feDropShadow in="borda" dx="0" dy="3" stdDeviation="2.4" flood-color="#3A1222"
+                    flood-opacity="0.25" />
+                </filter>
+                <filter id="s-recorte-leve" x="-15%" y="-15%" width="130%" height="140%"
+                  color-interpolation-filters="sRGB">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="1" seed="37" result="ruido" />
+                  <feDisplacementMap in="SourceGraphic" in2="ruido" scale="1" xChannelSelector="R" yChannelSelector="G"
+                    result="borda" />
+                  <feDropShadow in="borda" dx="0" dy="1.4" stdDeviation="1" flood-color="#3A1222" flood-opacity="0.2" />
+                </filter>
+                <filter id="s-sombra" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                  <feDropShadow dx="0" dy="1.6" stdDeviation="1.1" flood-color="#3A1222" flood-opacity="0.19" />
+                </filter>
+                <filter id="s-fibra" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+                  <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="9" result="n" />
+                  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .26 -.1"
+                    result="pontos" />
+                  <feComposite in="pontos" in2="SourceGraphic" operator="in" result="fibras" />
+                  <feMerge>
+                    <feMergeNode in="SourceGraphic" />
+                    <feMergeNode in="fibras" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <g filter="url(#s-sombra)">
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(0 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(30 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(60 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(90 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(120 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(150 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(180 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(210 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(240 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(270 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(300 60 60)" />
+                <path d="M60,4 L66,18 L54,18 Z" fill="#EDB04A" transform="rotate(330 60 60)" />
+              </g>
+              <g filter="url(#s-recorte)">
+                <circle cx="60" cy="60" r="34" fill="#EDB04A" />
+              </g>
+              <g filter="url(#s-sombra)">
+                <circle cx="60" cy="60" r="22" fill="#F6D590" />
+              </g>
+            </svg>
+          </div>
+          <svg class="dia__chao" viewBox="0 0 660 500" preserveAspectRatio="xMidYMax slice" aria-hidden="true"
+            focusable="false">
+            <defs>
+              <filter id="g-recorte" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="1" seed="35" result="ruido" />
+                <feDisplacementMap in="SourceGraphic" in2="ruido" scale="2.7" xChannelSelector="R" yChannelSelector="G"
+                  result="borda" />
+                <feDropShadow in="borda" dx="0" dy="3" stdDeviation="2.4" flood-color="#3A1222" flood-opacity="0.22" />
+              </filter>
+              <filter id="g-recorte-leve" x="-15%" y="-15%" width="130%" height="140%"
+                color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="1" seed="39" result="ruido" />
+                <feDisplacementMap in="SourceGraphic" in2="ruido" scale="1.8" xChannelSelector="R" yChannelSelector="G"
+                  result="borda" />
+                <feDropShadow in="borda" dx="0" dy="1.4" stdDeviation="1" flood-color="#3A1222" flood-opacity="0.18" />
+              </filter>
+              <filter id="g-sombra" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+                <feDropShadow dx="0" dy="1.6" stdDeviation="1.1" flood-color="#3A1222" flood-opacity="0.17" />
+              </filter>
+              <filter id="g-fibra" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="9" result="n" />
+                <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .26 -.1"
+                  result="pontos" />
+                <feComposite in="pontos" in2="SourceGraphic" operator="in" result="fibras" />
+                <feMerge>
+                  <feMergeNode in="SourceGraphic" />
+                  <feMergeNode in="fibras" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#g-recorte)">
+              <path
+                d="M-10,410 C80,384 170,386 236,402 C300,418 362,392 444,388 C524,384 592,402 670,394 L670,510 L-10,510 Z"
+                fill="#8AAA7C" />
+            </g>
+            <g filter="url(#g-recorte-leve)">
+              <rect x="93" y="378" width="6" height="22" rx="2" fill="#A3734F" />
+              <circle cx="96" cy="372" r="16" fill="#6E9466" />
+              <rect x="125" y="384" width="6" height="22" rx="2" fill="#A3734F" />
+              <circle cx="128" cy="378" r="12" fill="#56794F" />
+              <rect x="563" y="376" width="6" height="22" rx="2" fill="#A3734F" />
+              <circle cx="566" cy="370" r="15" fill="#6E9466" />
+              <rect x="595" y="382" width="6" height="22" rx="2" fill="#A3734F" />
+              <circle cx="598" cy="376" r="11" fill="#56794F" />
+            </g>
+            <g filter="url(#g-recorte-leve)">
+              <rect x="408" y="356" width="72" height="44" fill="#FFFFFF" />
+              <path d="M400,360 L444,330 L488,360 Z" fill="#CF6A88" />
+              <rect x="418" y="368" width="12" height="12" rx="2" fill="#9A7AA6" />
+              <rect x="438" y="368" width="12" height="12" rx="2" fill="#9A7AA6" />
+              <rect x="458" y="368" width="12" height="12" rx="2" fill="#9A7AA6" />
+              <circle cx="444" cy="347" r="5" fill="#EDB04A" />
+            </g>
+            <g filter="url(#g-recorte)">
+              <path d="M-10,440 C110,420 214,428 324,444 C436,460 544,436 670,430 L670,510 L-10,510 Z" fill="#6E9466" />
+            </g>
+            <g filter="url(#g-sombra)">
+              <circle cx="60" cy="458" r="4" fill="#EDB04A" />
+              <circle cx="150" cy="448" r="4" fill="#FFFFFF" />
+              <circle cx="250" cy="462" r="4" fill="#E8B2C2" />
+              <circle cx="380" cy="470" r="4" fill="#EDB04A" />
+              <circle cx="520" cy="456" r="4" fill="#FFFFFF" />
+              <circle cx="610" cy="450" r="4" fill="#E8B2C2" />
+            </g>
+          </svg>
+          <svg class="dia__arco" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M12 80 A38 62 0 0 1 88 80" vector-effect="non-scaling-stroke" />
+          </svg>
+
+          <ol class="dia__momentos">
+            <li style="--a: 172deg"><button type="button" class="momento" aria-pressed="true"
+                data-periodo="manha-cedo"><span class="momento__hora">7h</span><span
+                  class="momento__titulo">Chegada</span><span class="momento__texto">Acolhida na porta da sala, com
+                  tempo para a despedida.</span></button></li>
+            <li style="--a: 152deg"><button type="button" class="momento" aria-pressed="false"
+                data-periodo="manha-cedo"><span class="momento__hora">8h</span><span class="momento__titulo">Roda de
+                  conversa</span><span class="momento__texto">Calendário, combinados e as novidades que cada um trouxe
+                  de casa.</span></button></li>
+            <li style="--a: 132deg"><button type="button" class="momento" aria-pressed="false"
+                data-periodo="manha"><span class="momento__hora">8h30</span><span class="momento__titulo">Projeto da
+                  turma</span><span class="momento__texto">Investigação, artes ou experiências do projeto em
+                  andamento.</span></button></li>
+            <li style="--a: 112deg"><button type="button" class="momento" aria-pressed="false"
+                data-periodo="manha"><span class="momento__hora">9h30</span><span class="momento__titulo">Lanche e
+                  parque</span><span class="momento__texto">Lanche coletivo com frutas e, depois, brincadeira livre ao
+                  ar livre.</span></button></li>
+            <li style="--a: 92deg"><button type="button" class="momento" aria-pressed="false"
+                data-periodo="meio-dia"><span class="momento__hora">11h</span><span class="momento__titulo">Leitura e
+                  música</span><span class="momento__texto">História contada, canções e um momento de calma antes da
+                  saída.</span></button></li>
+            <li style="--a: 72deg"><button type="button" class="momento" aria-pressed="false"
+                data-periodo="meio-dia"><span class="momento__hora">11h45</span><span class="momento__titulo">Saída do
+                  meio período</span><span class="momento__texto">Hora de contar em casa o que aconteceu na
+                  escola.</span></button></li>
+            <li style="--a: 52deg"><button type="button" class="momento" aria-pressed="false" data-periodo="tarde"
+                data-integral><span class="momento__hora">12h</span><span class="momento__titulo">Almoço e
+                  descanso</span><span class="momento__texto">Almoço no refeitório e, depois, colchonetes, luz baixa e
+                  música suave.</span></button></li>
+            <li style="--a: 30deg"><button type="button" class="momento" aria-pressed="false" data-periodo="tarde"
+                data-integral><span class="momento__hora">14h30</span><span class="momento__titulo">Oficinas</span><span
+                  class="momento__texto">Inglês, música, movimento e culinária, em dias alternados.</span></button></li>
+            <li style="--a: 9deg"><button type="button" class="momento" aria-pressed="false" data-periodo="fim-de-tarde"
+                data-integral><span class="momento__hora">17h30</span><span class="momento__titulo">Saída do
+                  integral</span><span class="momento__texto">Lanche da tarde e o reencontro com a família no
+                  portão.</span></button></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== Contato ===== -->
+      <section class="painel painel--contato" id="contato" aria-labelledby="t-contato">
+        <div class="painel__texto">
+          <h2 class="titulo-pauta" id="t-contato" tabindex="-1">O portão está aberto</h2>
+          <p class="lead">Visitas guiadas de segunda a sexta. Venha com a criança, conheça os espaços e converse com a
+            coordenação.</p>
+          <ul class="contatos">
+            <li><svg class="icone" aria-hidden="true">
+                <use href="#i-pino" />
+              </svg><span><strong>Endereço</strong><a href="https://maps.app.goo.gl/3HZgUs8pBzDncAwa6" target="_blank"
+                  rel="noopener">Avenida Frei Teodoro, 730,
+                  Planalto Ayrton Senna, Fortaleza&nbsp;-&nbsp;CE</a><a class="como-chegar"
+                  href="https://maps.app.goo.gl/3HZgUs8pBzDncAwa6" target="_blank" rel="noopener">Ver no mapa e traçar
+                  rota</a></span></li>
+            <li><svg class="icone" aria-hidden="true">
+                <use href="#i-telefone" />
+              </svg><span><strong>Telefone</strong><a href="tel:+85987715486">(85)&nbsp;98771-5486</a></span></li>
+            <li><svg class="icone" aria-hidden="true">
+                <use href="#i-conversa" />
+              </svg><span><strong>WhatsApp</strong><a href="https://wa.me/85987715486" target="_blank"
+                  rel="noopener">(85)&nbsp;98771-5486</a></span></li>
+            <li><svg class="icone" aria-hidden="true">
+                <use href="#i-email" />
+              </svg><span><strong>E-mail</strong><a
+                  href="mailto:secretaria@sonhomeu.edu.br">secretaria@sonhomeu.edu.br</a></span></li>
+            <li><svg class="icone" aria-hidden="true">
+                <use href="#i-relogio" />
+              </svg><span><strong>Secretaria</strong>Segunda a sexta, das 7h às 17h</span></li>
+          </ul>
+        </div>
+        <div class="painel__visual">
+          <form class="ficha" novalidate aria-labelledby="t-ficha">
+            <img class="ficha__aviao" src="assets/img/aviao.svg" alt="" width="120" height="80">
+            <h3 class="ficha__titulo" id="t-ficha">Agendar visita</h3>
+            <div class="campo">
+              <label for="f-nome">Seu nome</label>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="e-nome">
+              <p class="campo__erro" id="e-nome" hidden>Escreva seu nome para a secretaria saber com quem falar.</p>
+            </div>
+            <div class="campo">
+              <label for="f-idade">Idade da criança</label>
+              <select id="f-idade" name="idade" required aria-describedby="e-idade">
+                <option value="">Escolha uma opção</option>
+                <option>2 ou 3 anos (Maternal)</option>
+                <option>4 ou 5 anos (Pré-escola)</option>
+                <option>6 a 10 anos (1º ao 5º ano)</option>
+              </select>
+              <p class="campo__erro" id="e-idade" hidden>Escolha a idade para indicarmos a turma certa.</p>
+            </div>
+            <fieldset class="campo campo--opcoes">
+              <legend>Melhor período para a visita</legend>
+              <label class="opcao"><input type="radio" name="periodo" value="manhã" checked><span>Manhã</span></label>
+              <label class="opcao"><input type="radio" name="periodo" value="tarde"><span>Tarde</span></label>
+            </fieldset>
+            <button type="submit" class="botao botao--primario botao--cheio">Enviar pelo WhatsApp</button>
+
+          </form>
+        </div>
+      </section>
+
+    </section>
+  </main>
+</body>
+
+</html>
